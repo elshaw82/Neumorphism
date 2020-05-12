@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e6ec;   
+}
+
+#container {
+    width:50vw;
+    height:50vh;
+    /* border: black solid thin; */
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+}
+
+/* box-shadow: [horizontal offset] 
+            [vertical offset]
+            [blur radius]
+            [optional spread radius] 
+            [color]; */
+
+.buttons {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    position: fixed; /* or absolute */
+    top: 40%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+}
+
+.heart {
+    margin:25px;
+    width:80px;
+    height: 80px;
+    border-radius:10px;
+    border: #e1e6ec solid thin;
+    box-shadow:20px 20px 50px #d0d6e2, 
+    -30px -30px 60px #ffffff;
+    justify-content: center;
+    align-items: center;
+}  
+
+.red {
+    width:35px;
+    height:35px;
+    fill: #e22e49;
+    position: relative;
+    top: 20px;
+    left:22px;
+}
+  
+.rewind {
+        margin:25px;
+        width:80px;
+        height: 80px;
+        border-radius:50px;
+        border: #e1e6ec solid thin;
+        box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  
+        rgba(255,255,255, 0.5);
+}
+
+.rewind > .fas {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: relative;
+    top: 28px;
+    left:23px; 
+
+}
+
+.play {
+    margin:25px;
+    width:80px;
+    height: 80px;
+    border-radius:50px;
+    border: #e1e6ec solid thin;
+    box-shadow:  9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+}
+
+.fas{
+    position: relative;
+    top: 28px;
+    left:30px;
+}
+
+.forward {
+    margin:25px;
+    width:80px;
+    height: 80px;
+    border-radius:50px;
+    border: #e1e6ec solid thin;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+}
+
+.forward > .fas {
+    position: relative;
+    top: 28px;
+    left:28px; 
+}
+
+.progress {
+    width:70%;
+    height:20px;
+    margin:auto;
+    border-radius:50px;
+    border: #e1e6ec solid thin;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+    outline:none;
+    position: fixed; /* or absolute */
+    top: 75%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+}
+
+.progress-inner {
+    width:30%;
+    height:100%;
+    background-color: #a2b1c6;
+    border-radius: 50px;
+}

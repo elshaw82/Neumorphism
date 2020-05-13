@@ -124,3 +124,90 @@ body {
     background-color: #a2b1c6;
     border-radius: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    #container {
+        height:90vh;
+}
+
+.buttons {
+    position: fixed; /* or absolute */
+    top: 45%;
+    left: 50%;  
+}
+
+    .progress {
+        position: fixed; /* or absolute */
+        top: 93%;
+        left: 50%; 
+
+}
+
+.heart {
+    margin:25px;
+    width:65px;
+    height: 65px;
+}  
+
+.red {
+    width:25px;
+    height:25px;
+}
+  
+.rewind {
+        margin:25px;
+        width:65px;
+        height: 65px;
+        border-radius:50px;
+        border: #e1e6ec solid thin;
+        box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  
+        rgba(255,255,255, 0.5);
+}
+
+.rewind > .fas {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: relative;
+    top: 25px;
+    left:15px; 
+
+}
+
+.play {
+    margin:25px;
+    width:65px;
+    height: 65px;
+}
+
+.fas{
+    position: relative;
+    top: 20px;
+    left:25px; 
+}
+
+.forward {
+    margin:25px;
+    width:65px;
+    height: 65px;
+    
+}
+
+.forward > .fas {
+    position: relative;
+    top: 25px;
+    left:18px; 
+}
+
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .progress {
+        position: fixed; /* or absolute */
+        top: 95%;
+        left: 50%; 
+
+}
+}
